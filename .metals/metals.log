@@ -1,0 +1,484 @@
+2024.05.30 17:18:00 INFO  Started: Metals version 1.3.1 in folders '/home/julie/Courses/ProgrammingII/programming-2-ex-9' for client Visual Studio Code 1.89.1.[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@6943e780]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3975b6b4]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6943e780]
+2024.05.30 17:18:00 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.05.30 17:18:08 INFO  running '/home/julie/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.05.30 17:18:08 INFO  copying runtime jar...[0m
+2024.05.30 17:18:13 INFO  [info] welcome to sbt 1.9.9 (Eclipse Adoptium Java 17)[0m
+2024.05.30 17:18:15 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...[0m
+2024.05.30 17:18:15 INFO  [info] loading project definition from /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/project/project[0m
+2024.05.30 17:18:17 INFO  [info] loading settings for project hello-world-build from metals.sbt ...[0m
+2024.05.30 17:18:17 INFO  [info] loading project definition from /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/project[0m
+2024.05.30 17:18:19 INFO  [success] Generated .bloop/hello-world-build.json[0m
+2024.05.30 17:18:19 INFO  [success] Total time: 1 s, completed 30 May 2024, 17:18:19[0m
+2024.05.30 17:18:20 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.05.30 17:18:20 INFO  [info] set current project to hello-world (in build file:/home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/)[0m
+2024.05.30 17:18:20 INFO  [success] Generated .bloop/root.json[0m
+2024.05.30 17:18:20 INFO  [success] Generated .bloop/root-test.json[0m
+2024.05.30 17:18:20 INFO  [success] Total time: 1 s, completed 30 May 2024, 17:18:21[0m
+2024.05.30 17:18:21 INFO  time: ran 'sbt bloopInstall' in 13s[0m
+2024.05.30 17:18:21 INFO  Attempting to connect to the build server...[0m
+2024.05.30 17:18:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/julie/Courses/ProgrammingII/programming-2-ex-9/.metals/bsp.trace.json or /home/julie/.cache/metals/bsp.trace.json[0m
+2024.05.30 17:18:24 INFO  time: Connected to build server in 3.04s[0m
+2024.05.30 17:18:24 INFO  Connected to Build server: Bloop v1.5.17[0m
+2024.05.30 17:18:24 INFO  time: Imported build in 0.13s[0m
+2024.05.30 17:18:29 INFO  time: indexed workspace in 4.29s[0m
+2024.05.30 17:18:53 INFO  Deduplicating compilation of root from bsp client 'Metals 1.3.1' (since 29.038s)[0m
+2024.05.30 17:18:53 INFO  compiling root (2 scala sources)[0m
+2024.05.30 17:18:53 INFO  compiling root (2 scala sources)[0m
+2024.05.30 17:18:54 INFO  time: compiled root in 1.37s[0m
+2024.05.30 17:18:54 INFO  compiling root (2 scala sources)[0m
+2024.05.30 17:18:54 INFO  time: compiled root in 0.21s[0m
+2024.05.30 17:18:54 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:18:56 INFO  time: compiled root in 1.05s[0m
+2024.05.30 17:20:13 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:20:13 INFO  time: compiled root in 57ms[0m
+2024.05.30 17:20:14 WARN  Could not find semantic tokens for: file:///home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala[0m
+2024.05.30 17:20:22 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:20:22 INFO  time: compiled root in 75ms[0m
+2024.05.30 17:20:29 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 2.43s[0m
+[31merror[39m: 
+playground.worksheet.sc:8 (mdoc generated code) 
+ this kind of statement is not allowed here
+      package sum
+
+
+2024.05.30 17:20:33 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.27s[0m
+[31merror[39m: hello-world/src/main/scala/playground.worksheet.sc:1:8: 
+Not found: sum
+import sum.*
+       ^^^
+[31merror[39m: 
+playground.worksheet.sc:8 (mdoc generated code) 
+ Reference to $doc is ambiguous.
+It is both defined in object MdocSession
+and imported subsequently by import <error Not found: sum>._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+playground.worksheet.sc:9 (mdoc generated code) 
+ Reference to $doc is ambiguous.
+It is both defined in object MdocSession
+and imported subsequently by import <error Not found: sum>._
+    $doc.endSection();
+
+
+2024.05.30 17:20:52 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.16s[0m
+2024.05.30 17:21:37 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: Non-zero integral values may not have a leading zero.
+def sumSeq() : Int 00
+                   ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.setNumberInt$1(LegacyScanner.scala:847)
+	at scala.meta.internal.tokenizers.LegacyScanner.setNumberInteger$1(LegacyScanner.scala:858)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:875)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchZero$1(LegacyScanner.scala:336)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:339)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:21:52 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:21:52 INFO  time: compiled root in 0.16s[0m
+2024.05.30 17:21:58 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:21:58 INFO  time: compiled root in 0.68s[0m
+2024.05.30 17:22:28 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: unclosed string literal
+        case 0"
+              ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:560)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:379)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:383)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:22:31 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:22:31 INFO  time: compiled root in 83ms[0m
+2024.05.30 17:22:39 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:6: error: unclosed string interpolation
+        case x"1 + sumSeq(i -1)
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:666)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:364)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:383)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:22:40 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:6: error: unclosed string interpolation
+        case x"1 + sumSeq(i -1)
+               ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:666)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:364)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:383)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:22:45 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:22:45 INFO  time: compiled root in 86ms[0m
+2024.05.30 17:23:32 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:23:32 INFO  time: compiled root in 91ms[0m
+2024.05.30 17:23:40 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:23:40 INFO  time: compiled root in 54ms[0m
+2024.05.30 17:23:51 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:23:51 INFO  time: compiled root in 59ms[0m
+2024.05.30 17:23:53 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:23:53 INFO  time: compiled root in 55ms[0m
+2024.05.30 17:24:02 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.05.30 17:24:03 INFO  no build target found for /scala/Int.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:24:03 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:24:03 INFO  time: compiled root in 97ms[0m
+2024.05.30 17:24:09 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: illegal character '\u00a8'
+¨
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:476)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:481)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:24:11 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:3: error: unclosed comment
+/**
+^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:73)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:24:24 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:24:24 INFO  time: compiled root in 65ms[0m
+2024.05.30 17:24:40 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:15: error: unclosed comment
+/**
+^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:55)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:73)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:316)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:24:50 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:24:50 INFO  time: compiled root in 88ms[0m
+2024.05.30 17:24:57 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:24:57 INFO  time: compiled root in 79ms[0m
+2024.05.30 17:25:14 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:21: error: unclosed string interpolation
+def sumPara(n: Int, t") : Int = {
+                      ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:666)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:364)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:383)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:25:15 ERROR Failed to tokenize input for semantic tokens for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/src/main/scala/sum/sum.scala
+scala.meta.tokenizers.TokenizeException: <input>:21: error: unclosed string interpolation
+def sumPara(n: Int, t"O) : Int = {
+                      ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:666)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:364)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:383)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2024.05.30 17:25:17 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:25:17 INFO  time: compiled root in 68ms[0m
+2024.05.30 17:25:33 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:25:33 INFO  time: compiled root in 65ms[0m
+2024.05.30 17:25:57 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:25:57 INFO  time: compiled root in 69ms[0m
+2024.05.30 17:26:04 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:26:04 INFO  time: compiled root in 58ms[0m
+May 30, 2024 5:26:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1532
+2024.05.30 17:29:58 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:29:58 INFO  time: compiled root in 62ms[0m
+2024.05.30 17:30:25 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/src/main/scala/sum/sum.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:30:25 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/src/main/scala/sum/sum.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:30:26 WARN  Could not find semantic tokens for: file:///home/julie/Courses/ProgrammingII/programming-2-ex-9/src/main/scala/sum/sum.scala[0m
+2024.05.30 17:30:46 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/src/main/scala/sum/sum.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:23 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/sum/sum.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:23 WARN  no build target for: /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/playground.worksheet.sc[0m
+2024.05.30 17:31:24 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/playground.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.3[0m
+[31merror[39m: threads/src/main/scala/playground.worksheet.sc:1:8: 
+Not found: sum
+import sum.*
+       ^^^
+[31merror[39m: 
+playground.worksheet.sc:8 (mdoc generated code) 
+ Reference to $doc is ambiguous.
+It is both defined in object MdocSession
+and imported subsequently by import <error Not found: sum>._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+playground.worksheet.sc:9 (mdoc generated code) 
+ Reference to $doc is ambiguous.
+It is both defined in object MdocSession
+and imported subsequently by import <error Not found: sum>._
+    $doc.endSection();
+
+
+2024.05.30 17:31:25 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 1.73s[0m
+2024.05.30 17:31:32 INFO  compiling root (1 scala source)[0m
+2024.05.30 17:31:32 INFO  time: compiled root in 86ms[0m
+[31merror[39m: hello-world/src/main/scala/playground.worksheet.sc:1:8: 
+Not found: sum
+import sum.*
+       ^^^
+[31merror[39m: 
+playground.worksheet.sc:8 (mdoc generated code) 
+ Reference to $doc is ambiguous.
+It is both defined in object MdocSession
+and imported subsequently by import <error Not found: sum>._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+playground.worksheet.sc:9 (mdoc generated code) 
+ Reference to $doc is ambiguous.
+It is both defined in object MdocSession
+and imported subsequently by import <error Not found: sum>._
+    $doc.endSection();
+
+
+2024.05.30 17:31:32 INFO  time: evaluated worksheet 'playground.worksheet.sc' in 0.13s[0m
+2024.05.30 17:31:46 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:46 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:49 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:49 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:51 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:51 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:53 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:53 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:53 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:54 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:55 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:56 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:57 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:57 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:31:57 WARN  no build target for: /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt[0m
+2024.05.30 17:31:57 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:00 INFO  running '/home/julie/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.05.30 17:32:01 INFO  [info] welcome to sbt 1.9.9 (Eclipse Adoptium Java 17)[0m
+2024.05.30 17:32:01 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...[0m
+2024.05.30 17:32:02 INFO  [info] loading project definition from /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/project/project[0m
+2024.05.30 17:32:02 INFO  [info] loading settings for project hello-world-build from metals.sbt ...[0m
+2024.05.30 17:32:02 INFO  [info] loading project definition from /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/project[0m
+2024.05.30 17:32:04 INFO  [success] Generated .bloop/hello-world-build.json[0m
+2024.05.30 17:32:04 INFO  [success] Total time: 1 s, completed 30 May 2024, 17:32:04[0m
+2024.05.30 17:32:05 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.05.30 17:32:05 INFO  [info] set current project to threads (in build file:/home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/)[0m
+2024.05.30 17:32:05 INFO  [success] Generated .bloop/root-test.json[0m
+2024.05.30 17:32:05 INFO  [success] Generated .bloop/root.json[0m
+2024.05.30 17:32:05 INFO  [success] Total time: 0 s, completed 30 May 2024, 17:32:06[0m
+2024.05.30 17:32:06 INFO  time: ran 'sbt bloopInstall' in 6.36s[0m
+2024.05.30 17:32:06 INFO  Disconnecting from Bloop session...[0m
+2024.05.30 17:32:06 INFO  Shut down connection with build server.[0m
+2024.05.30 17:32:06 INFO  Attempting to connect to the build server...[0m
+2024.05.30 17:32:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/julie/Courses/ProgrammingII/programming-2-ex-9/.metals/bsp.trace.json or /home/julie/.cache/metals/bsp.trace.json[0m
+2024.05.30 17:32:06 INFO  time: Connected to build server in 21ms[0m
+2024.05.30 17:32:06 INFO  Connected to Build server: Bloop v1.5.17[0m
+2024.05.30 17:32:08 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/hello-world/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:08 INFO  time: indexed workspace in 1.2s[0m
+2024.05.30 17:32:08 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:08 WARN  no build target for: /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/playground.worksheet.sc[0m
+2024.05.30 17:32:08 WARN  no build target for: /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/sum/sum.scala[0m
+2024.05.30 17:32:08 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:08 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:47 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/sum/sum.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:47 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/sum/sum.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:48 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/src/main/scala/sum/sum.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:50 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:54 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:32:54 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:33:10 INFO  no build target found for /home/julie/Courses/ProgrammingII/programming-2-ex-9/threads/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.05.30 17:33:11 INFO  Shutting down server[0m
+2024.05.30 17:33:11 INFO  shutting down Metals[0m
+2024.05.30 17:33:11 INFO  Shut down connection with build server.[0m
+2024.05.30 17:33:11 INFO  Exiting server[0m
