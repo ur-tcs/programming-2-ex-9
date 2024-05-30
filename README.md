@@ -1,4 +1,4 @@
-# Programming 2 - Exercise 9 : Parallel programming: threads and actors
+# Programming 2 - Exercise 9: Parallel programming: threads and actors
 
 In this exercise, you wil get familiar with the notions of parallelism and concurrency, and learn how to program using threads and actors. 
 
@@ -29,76 +29,8 @@ Let us start by those three notions. For you, what is the difference between seq
 
 </details>
 
-## Parallel Programming
-
-### Discover the Threads
-
-Create a function that laucnh a thread an print its name
-See that they not occurs in the right order
-
-```Scala
-// Scala code for thread creation by extending 
-// the Thread class 
-class MyThread extends Thread 
-{ 
-	override def run() 
-	{ 
-		// Displaying the thread that is running 
-		println("Thread " + Thread.currentThread().getName() + 
-										" is running.") 
-	} 
-} 
-
-// Creating object 
-object GFG 
-{ 
-	// Main method 
-	def main(args: Array[String]) 
-	{ 
-		for (x <- 1 to 5) 
-		{ 
-			var th = new MyThread() 
-						th.setName(x.toString()) 
-							th.start() 
-		} 
-	} 
-} 
-```
-
-
-### The Sum of Many
-
-Now, you are going to make a function that compute the sum in two different way. First, let us define a sequential version of a sum up to $n$. 
-
-```Scala
-def sumSeq(n: Int) : Int = {
-    n match
-        case 0 => ???
-        case _ => ???
-}
-```
-This (not very smart function) add 1 $n$ times and returns the result. Complete the implementation in [threads/src/main/scala/sum/sum.scala](threads/src/main/scala/sum/sum.scala).
-
-Now, let us do the same, with multiple threads
-
-### Communication: Shared Memory VS. Message Passing
-
-Let us see how threads can communicate. 
-
-### Deadlocks and Rendez-Vous 
-
-Launch thread, random action, then wait, decrement counter, and then resume 
-
-
-### Example in which concurrency works better than sequential 
-
-App to apply different tasks on an image (on each pixel?)
-
-
-
-## Parallel Functional Programming
-
-### Concurrent Data Structures
-parallel collections 
-
-### Futures
+Now, you can explore those different notions through various exercises. We recommend the following order: 
+1. Threads and concurrency
+2. Parallel functional programming
+3. Asynchronicity and futures
+4. Scalashop
