@@ -1,4 +1,4 @@
-# Programming 2 - Exercise 9: Parallel programming: threads and actors
+# Programming 2 - Exercise 9: Parallel Programming
 
 In this exercise, you wil get familiar with the notions of parallelism and concurrency, and learn how to program using threads and actors. 
 
