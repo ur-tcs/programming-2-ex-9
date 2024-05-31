@@ -30,7 +30,7 @@ Let us start by those three notions. For you, what is the difference between seq
 </details>
 
 Now, you can explore those different notions through various exercises. We recommend the following order: 
-1. Threads and concurrency
-2. Parallel functional programming
-3. Asynchronicity and futures
-4. Scalashop
+1. [Threads and concurrency](./threads/)
+2. [Parallel functional programming](./parallelism/)
+3. [Asynchronicity and futures](./futures/)
+4. [Scalashop](./scalashop/)
