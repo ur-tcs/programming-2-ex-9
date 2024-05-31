@@ -1,5 +1,15 @@
 # # Programming 2 - Exercise 9: Threads and Concurrency
 
+Overview:
+Create a thred, print its name/numer (I am thread 1, 2, 5...)
+See that they can occur in various order
+
+Make a sum sequential vs concurrent
+
+Shared variables : message passing or shared memory
+
+Synchronization: deadlock and rendez-vous
+
 ## Discover the Threads
 
 Create a function that launches a thread an print its name
