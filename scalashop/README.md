@@ -8,7 +8,6 @@ You will work on the following files:
 
 * [src/main/scala/scalashop/image/Filter.scala](src/main/scala/scalashop/image/Filter.scala)
 * [src/main/scala/scalashop/image/ParImage.scala](src/main/scala/scalashop/image/ParImage.scala)
-* [src/main/scala/scalashop/howManyHoursISpentOnThisLab.scala](src/main/scala/scalashop/howManyHoursISpentOnThisLab.scala)
 
 If you have issues with your setup (Scala installation, IDE, using the terminal, etc.), please call us.
 
