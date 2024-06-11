@@ -162,7 +162,11 @@ We use the [Rec 601 standard](https://en.wikipedia.org/wiki/Luma_(video)#Rec._60
 
 This is shown by the following relationship:
 
-$$ (a,r,g,b) \mapsto(a,luma,luma,luma) ~\text{where}~ luma=lumaR \times r + lumaG \times g+lumaB \times b $$
+$$ (a,r,g,b) \mapsto(a,luma,luma,luma) $$
+
+where
+
+$$ luma=lumaR \times r + lumaG \times g+lumaB \times b $$
 
 and as a concrete example:
 
