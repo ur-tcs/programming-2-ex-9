@@ -2,7 +2,7 @@
 
 In this exercise, you are going to learn how to create threads and how to manage synchronization between them. Let us start!
 
-## Meet Your First Thread
+## Meet Your First Thread ⭐️
 
 You can find a skeleton for create a thread in [src/main/scala/threads/MyThread.scala](src/main/scala/threads/MyThread.scala). Take a look at the following code: 
 
@@ -63,7 +63,7 @@ class MyTaskWithParameter(param: String) extends Runnable {
 </details>
 
 
-## Kill the Thread? But It has a Family! 
+## Kill the Thread? But It has a Family! ⭐️
 
 While killing people is clearly forbidden, killing threads is only depreciated. In Scala (as in Java), stopping a thread abruptly is generally not recommended due to the potential for leaving the program in an inconsistent state or causing resource leaks. Instead, the preferred approach is to design your threads to be cancellable by checking for a stop condition regularly within the thread's task.
 
@@ -107,7 +107,7 @@ stoppableThread.interrupt()
 ```
 </details>
 
-## Don't Leave It on Its Own 
+## Don't Leave It on Its Own ⭐️
 
 Creating threads is fun, but for now, they are all running sequentially, which is a long way from the original goal. We are now going to generate multiple threads, running at the same time. To do so, create a new task that take as parameter an `Int`, the number of time the thread is supposed to sleep. Then, thanks to a `For` loop, launch multiple threads with random sleeping times, and observe the result. 
 
@@ -144,7 +144,7 @@ threads.foreach(_.join())
 
 
 
-## The Sum of Many
+## The Sum of Many ⭐️
 
 You are now able to manage multiple threads, congrats! Let us make them cooperate now. We want to make them collaborate to increase a counter. To do so, we are going to create a *shared variable* `sum`, accessible by all threads. Each thread has to add `1` to `sum`. Launch them a print the result. What is the value of `sum`? 
 
@@ -209,7 +209,7 @@ val sum = new AtomicInteger(0)
 sum.incrementAndGet()
 ```
 
-## Communication is the Key
+## Communication is the Key ⭐️
 
 Let us see how threads can communicate. Message passing between threads is a common concurrency pattern used for communication and coordination. In Scala, you can achieve message passing using the `Akka` actor-based concurrency framework for the JVM. An actor skeleton is available in [src/main/scala/threads/MyActor.scala](src/main/scala/threads/MyActor.scala). Take a look at the following code:
 
@@ -254,7 +254,7 @@ actor1 ! StartCommunication
 
 The main thread send a message `StartCommunication` to `actor1` thanks to the instruction `!`. Then, `actor1` prints the message and send a message to `actor2`, who send a message back. Try to play with this code to get familiar with these notions.
 
-## Rendez-vous
+## Rendez-vous 🔥
 
 Now, you are going to implement a famous synchronization paradigm: a rendez-vous. In a rendez-vous, each participant performs its own tak, wait for the other to complete their task to, and then resume their work. We want to follow the following scheme: 
 

@@ -1,6 +1,6 @@
 # Programming 2 - Exercise 9: Parallel Programming
 
-In this exercise, you wil get familiar with the notions of parallelism and concurrency, and learn how to program using threads and actors. 
+In this exercise, you wil get familiar with the notions of parallelism, concurrency, asynchronicity, and learn how to program using threads, actors, futures, and so on. Exercises marked with ⭐️ are the most important ones. Exercises marked with 🔥 are the most challenging ones. You do not need to complete all exercises to succeed in this class. Since this exercise is long, we advise you to do in priority exercises marked by a ⭐️.
 
 As in the every exercise you need to obtain the exercise files. Clone or fork the repository: `git clone https://github.com/ur-tcs/programming-2-ex-9.git` or download it by clicking on the green `<code>` button and select `download`.
 
@@ -30,7 +30,7 @@ Let us start by those three notions. For you, what is the difference between seq
 </details>
 
 Now, you can explore those different notions through various exercises. We recommend the following order: 
-1. [Threads and concurrency](./threads/)
-2. [Parallel functional programming](./parallelism/)
-3. [Asynchronicity and futures](./futures/)
-4. [Scalashop](./scalashop/)
+1. [Threads and concurrency](./threads/) ⭐️
+2. [Parallel functional programming](./parallelism/) ⭐️
+3. [Asynchronicity and futures](./futures/) ⭐️
+4. [Scalashop](./scalashop/) 🔥

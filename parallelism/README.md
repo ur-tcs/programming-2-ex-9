@@ -2,7 +2,7 @@
 
 Welcome to this exercise, in which you will learn about parallel functional programming!
 
-Exercises marked with ⭐️ are the most important ones. Exercises marked with 🔥 are the most challenging ones. Exercises additionally marked 🧪 are intended to build up to concepts used in this week’s lab. You do not need to complete all exercises to succeed in this class, and you do not need to do all exercises in the order they are written.
+Exercises marked with ⭐️ are the most important ones. Exercises marked with 🔥 are the most challenging ones. You do not need to complete all exercises to succeed in this class, and you do not need to do all exercises in the order they are written.
 
 ## Parallel Aggregation
 
