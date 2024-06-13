@@ -20,7 +20,7 @@ Let us start by those three notions. For you, what is the difference between seq
 
 ![seq-conc](seq-conc.png) 
 
-* Sequential: (e.g.: a supermarket with only one cashier). Sequential activities depends from each other and are not executed simultaneously, sand so hey cannot e parallel or concurrent.
+* Sequential: (e.g.: a supermarket with only one cashier). Sequential activities depends from each other and are not executed simultaneously, and so they cannot be parallel or concurrent.
 * Parallel but not concurrent: more than one process and no shared ressources (e.g.: a restaurant, each client eating its own food at the same time).
 * Concurrent but not parallel: more than on process accessing the same ressource at different times (e.g.: cashiers incrementing the global sale amount). 
 * Parallel and concurrent: more than one process accessing a shared ressource at the same time (e.g.: multiple reads in a database, human breathing in a classroom).
