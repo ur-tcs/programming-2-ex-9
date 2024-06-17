@@ -53,7 +53,7 @@ On the other hand, look at the instantiated signature that actually appears when
   def foldLeft(z: A)(op: (A, A) => A): A
 ```
 
-Thus, we had to restrict foldLeft to the special case where the operator op acts only on `A`, i.e. `B` is `A`. In doing so, we lost much of the general power of foldLeft, where `B` and op were unconstrained.
+Thus, we had to restrict foldLeft to the special case where the operator `op` acts only on `A`, i.e. `B` is `A`. In doing so, we lost much of the general power of foldLeft, where `B` and `op` were unconstrained.
 
 With `reduce`, however, it is possible to have a parallel implementation! Are there any conditions we must impose on `op` or the input list `l` for this parallelization to be safe, i.e., deterministic?
 
@@ -122,10 +122,10 @@ val y: Int = 4
 
 With this, we have three conditions that allowed us to first define `reduce` in terms of `foldLeft`, and then parallelize it:
 
-1. restriction of output type `B =:= A`
+1. restriction of output type `B == A`
 2. restriction of operator type `op: (B, B) => B`
 3. restriction of operator behaviour `associative op`
-4. 
+
 Discuss these conditions in a group. Are they necessary? What do they change from the sequential constraints in `foldLeft`?
 
 
@@ -270,7 +270,7 @@ Can you come up with minimal mathematical conditions on `seqop`, `combop`, and `
 
 Try to identify which different operations the implementations use, and what the safety conditions of those smaller operations are.
 
-Writing the concrete output on a small symbolic list, e.g. `List(a, b, c)`, can go a long away in identifying general hypotheses to test.
+Writing the concrete output on a small symbolic list, e.g. `List(a, b, c)`, can go a long way in identifying general hypotheses to test.
 </details>
 
 
@@ -371,7 +371,7 @@ No. Consider a simple string `)(`. In the sequential fold version, you would fin
           parallel thread 1   parallel thread 2
 input            ")"                 "("
 numOpen          -1                  +1
-after reduce    (-1) + (+1) === 0
+after reduce    (-1) + (+1) == 0
 ```
 and since `== 0 `is our condition for balancing, we will claim that the string `)(` is balanced, which is incorrect according to our definition.
 </details>
@@ -561,7 +561,7 @@ You can also run the JMH benchmarks yourself inside `sbt` with the following com
 Jmh/run -t max -f 1
 ```
 
-where `-t` max tells JMH to use the maximum number of threads available, and `-f 1` tells it to use one fork, i.e., run the whole benchmark suite only once. Feel free to play with the values. You can also use `Jmh/run -h` to see all available options.
+where `-t max` tells JMH to use the maximum number of threads available, and `-f 1` tells it to use one fork, i.e., run the whole benchmark suite only once. Feel free to play with the values. You can also use `Jmh/run -h` to see all available options.
 
 ### Takeaways
 
