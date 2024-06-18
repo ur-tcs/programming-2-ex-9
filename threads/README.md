@@ -211,7 +211,28 @@ sum.incrementAndGet()
 
 ## Communication is the Key ⭐️
 
-Let us see how threads can communicate. Message passing between threads is a common concurrency pattern used for communication and coordination. In Scala, you can achieve message passing using the `Akka` actor-based concurrency framework for the JVM. An actor skeleton is available in [src/main/scala/threads/MyActor.scala](src/main/scala/threads/MyActor.scala). Take a look at the following code:
+Let us see how threads can communicate. Message passing between threads is a common concurrency pattern used for communication and coordination. In Scala, you can achieve message passing using the `Akka` actor-based concurrency framework for the JVM. Note that actors are not native to Scala, and thus you need to include the dedicated library into [build.sbt](build.sbt):
+
+```Scala
+resolvers += "Akka library repository".at("https://repo.akka.io/maven"),
+libraryDependencies ++= Seq(
+    "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
+    "ch.qos.logback" % "logback-classic" % "1.2.13",
+    "com.typesafe.akka" %% "akka-actor-testkit-typed" % akkaVersion % Test,
+    "org.scalatest" %% "scalatest" % "3.2.15" % Test
+  )
+
+lazy val akkaVersion = sys.props.getOrElse("akka.version", "2.9.3")
+
+// Run in a separate JVM, to make sure sbt waits until all threads have
+// finished before returning.
+// If you want to keep the application running while executing other
+// sbt tasks, consider https://github.com/spray/sbt-revolver/
+fork := true
+```
+The previous code ensure that `Akka` is part of your project. If you want to include other libraries, you will have to follow the same pattern. 
+
+An actor skeleton is available in [src/main/scala/threads/MyActor.scala](src/main/scala/threads/MyActor.scala). Take a look at the following code:
 
 ```Scala
 case object StartCommunication
