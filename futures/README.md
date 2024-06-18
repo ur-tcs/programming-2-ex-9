@@ -2,7 +2,7 @@
 
 Welcome to this exercise! We are going to work on the notion of *asynchronicity* and the use of `future`! 
 
-Exercises marked with ⭐️ are the most important ones. Exercises marked with 🔥 are the most challenging ones. Exercises marked 🧪 are most useful for this week’s lab. You do not need to complete all exercises to succeed in this class, and you do not need to do all exercises in the order they are written.
+Exercises marked with ⭐️ are the most important ones. Exercises marked with 🔥 are the most challenging ones. You do not need to complete all exercises to succeed in this class, and you do not need to do all exercises in the order they are written.
 
 > [!NOTE]
 > We strongly encourage you to solve the exercises orally or on paper first, in groups. After completing a first draft on paper, you may want to check your solutions on your computer.

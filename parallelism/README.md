@@ -406,7 +406,7 @@ For example, the string `)))()((` would have the result `opens = (3, 2)`. Your a
 </details>
 
 
-## Tabulation 🧪
+## Tabulation
 
 Quite often, we find ourselves with collections whose elements are determined by a pattern. For example, a list of even numbers up to 6, `Array(0, 2, 4, 6)`, which is the function` x => 2 * x `evaluated from indices `0` to `3`. To specialize the generation of such collections, the Scala library provides the simple function `Array.tabulate` (similarly `List.tabulate`, etc). The function provides the [following interface](https://scala-lang.org/api/3.x/scala/Array$.html#tabulate-fffffde9):
 
