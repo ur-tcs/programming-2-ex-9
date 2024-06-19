@@ -67,8 +67,8 @@ def makeFriendsWithCallback(
 Implement `makeFriendsWithCallback` by calling the following functions appropriately:
 
 ```Scala
-def getUserCallback(id: String, callback: User => Unit): Unit
-def updateUserCallback(user: User, callback: () => Unit): Unit
+def getUserWithCallback(id: String, callback: User => Unit): Unit
+def updateUserWithCallback(user: User, callback: () => Unit): Unit
 ```
 
 If you solve this exercise on a computer, you can check your solutions by running `makeFriendsMain` with the appropriate version identifier, here callbacks:
@@ -92,7 +92,7 @@ Aihsa and Carlos are now friends!
 
 *Monadic style*
 
-Let’s now use `Future`s, in the **“monadic” style**. In this style, each asynchronous operation returns a `Future` object, which represents the result of the operation. We can then use methods such as map and flatMap one the `Future` to transform and combine it with other `Future`s.
+Let’s now use `Future`s, in the **“monadic” style**. In this style, each asynchronous operation returns a `Future` object, which represents the result of the operation. We can then use methods such as `map` and `flatMap` on the `Future` to transform and combine it with other `Future`s.
 
 In this style, we never await on a `Future` directly, except at the very end of the program; your implementation must not call `Await.result`, `Await.ready` or `await`.
 
@@ -258,7 +258,7 @@ Finished task #1: world
 
 ### Tasks with Dependencies
 
-Implement another command `addafter <depid> <time> <text>`, which creates a tasks that waits for `<time>` seconds then prints out `<text>`, but starts running only after the task with id `<depid>` has completed.
+Implement another command `addafter <depid> <time> <text>`, which creates a task that waits for `<time>` seconds then prints out `<text>`, but starts running only after the task with id `<depid>` has completed.
 
 ```Scala
 sbt:futures> runMain tasksMain
@@ -271,7 +271,7 @@ Started task #1
 Finished task #1: world
 ```
 
-In this example, we starts a task (numbered 0) that prints `hello` after 5 seconds, then starts another task (numbered 1) which runs after the first one and prints world after 1 second. Task #1 starts only after #0 has completed.
+In this example, we start a task (numbered 0) that prints `hello` after 5 seconds, then start another task (numbered 1) which runs after the first one and prints world after 1 second. Task #1 starts only after #0 has completed.
 
 Complete the following sketch.
 
@@ -350,7 +350,7 @@ You can control pagination using two URL parameters:
 
 1. `per_page`: the number of results to return per page. This will be the `pageSize` parameter of the `showContributorsMain` and `showContributors` functions.
 2. `page`: the page number to return.
-3. 
+
 Try it with the `lampepfl/gears` repository!
 
 * [https://api.github.com/repos/lampepfl/gears/contributors?per_page=2](https://api.github.com/repos/lampepfl/gears/contributors?per_page=2)
